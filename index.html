@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <h1>Blog Posts</h1>
+        <input type="text" id="search" placeholder="Search posts..." oninput="searchPosts()">
+        <select name="sortOptions" onchange="sortPosts()">
+            <option value="">Sort by</option>
+            <option value="title">Title</option>
+            <option value="userId">User ID</option>
+        </select>
+        <div id="postsContainer"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
